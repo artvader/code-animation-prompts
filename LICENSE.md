@@ -1,33 +1,33 @@
-# 来源、许可与免费分享约定
+# Source, license and free sharing agreement
 
-本仓库整理并封装了用户提供的「代码动画_341种风格提示词_免费」素材包。素材位于 [`skills/code-animation-prompts/assets/library/`](skills/code-animation-prompts/assets/library)，保留原始提示词、示例、说明与许可；为接入社区素材而修改的挑选器、统计及新增文件，在技能内的 [变更清单](skills/code-animation-prompts/references/library-changes.json) 单独登记。原包的 SHA-256 基线保留在 [source-manifest.json](docs/source-manifest.json)。
+This repository organizes and encapsulates the "Code Animation_341 Style Prompt Words_Free" material package provided by users. The material is located in [`skills/code-animation-prompts/assets/library/`](skills/code-animation-prompts/assets/library), and the original prompt words, examples, descriptions and licenses are retained; the selectors, statistics and new files modified to access community materials are separately registered in the [Change List](skills/code-animation-prompts/references/library-changes.json) within the skill. The SHA-256 baseline of the original package remains in [source-manifest.json](docs/source-manifest.json).
 
-## 原素材的分享约定
+## Sharing Agreement of Original Materials
 
-原始 [`说明.md`](skills/code-animation-prompts/assets/library/说明.md) 写明：
+The original [`guide.md`](skills/code-animation-prompts/assets/library/guide.md) states:
 
-> 全部免费，不用私信，不用买课。
+> All for free, no need to send private messages or buy courses.
 >
-> 你可以免费用、免费转给别人；转的时候也请免费分享。
+> You can use it for free and transfer it to others for free; please share it for free when transferring it.
 >
-> 禁止把这些内容包装成课程、付费 skills 或任何收费的东西拿去卖。
+> It is prohibited to package these contents into courses, paid skills or anything for sale.
 
-本仓库以免费方式分享该合集，不将其作为付费 skill 销售。新增的技能封装、脚本和展示文档随合集免费提供，允许在保留来源与本说明的前提下免费使用、修改及分享；请勿将本合集打包收费销售。
+This repository shares this collection for free and does not sell it as a paid skill. The new skill packages, scripts and display documents are provided free of charge with the collection. They are allowed to be used, modified and shared for free on the premise of retaining the source and this description; please do not package this collection and sell it for a fee.
 
-## 第三方许可
+## Third Party License
 
-| 来源 | 原包中的许可 | 署名 |
+| Source | License from original package | Attribution |
 |---|---|---|
-| Lemo-Opuscar | [MIT 全文](skills/code-animation-prompts/assets/library/第三方许可/Lemo-Opuscar_LICENSE.txt) | Copyright (c) 2026 LemoLab |
-| mg-styles-15 | [MIT 全文](skills/code-animation-prompts/assets/library/第三方许可/mg-styles-15_LICENSE.txt) | Copyright (c) 2026 Vincentwei1021 |
-| code-video | [MIT 全文](skills/code-animation-prompts/assets/library/第三方许可/code-video_LICENSE.txt) | Copyright (c) 2026 Bae-ChangHyun |
+| Lemo-Opuscar | [MIT Full Text](skills/code-animation-prompts/assets/library/third-party-licenses/Lemo-Opuscar_LICENSE.txt) | Copyright (c) 2026 LemoLab |
+| mg-styles-15 | [MIT Full text](skills/code-animation-prompts/assets/library/third-party-licenses/mg-styles-15_LICENSE.txt) | Copyright (c) 2026 Vincentwei1021 |
+| code-video | [MIT full text](skills/code-animation-prompts/assets/library/third-party-licenses/code-video_LICENSE.txt) | Copyright (c) 2026 Bae-ChangHyun |
 
-这些第三方文件保留原许可，本说明不变更第三方许可授予的权利。整个混合来源合集不统一标注为 MIT。各条目的具体来源以原始文件与 [`许可与来源.md`](skills/code-animation-prompts/assets/library/许可与来源.md) 为准。
+These third-party files retain the original license, and this note does not change the rights granted by the third-party license. The entire mixed source collection is not uniformly labeled MIT. The specific source of each entry shall be subject to the original document and [`licenses-and-sources.md`](skills/code-animation-prompts/assets/library/licenses-and-sources.md).
 
-## 仓库维护与署名
+## Warehouse maintenance and signature
 
-- **原始素材整理者**：哔哩哔哩 [**俯仰观照**](https://space.bilibili.com/3690990015613855/?spm_id_from=333.788.upinfo.detail.click)，感谢其资源分享；保留原包中的说明与署名。
-- **技能封装与仓库维护**：[XiaoyeCodes](https://github.com/XiaoyeCodes)。
-- **社区参考图**：K1 扁平矢量、K2 Q 版、K3 卡哇伊由 **Strange Leo (@strangeyu911-tech)** 在 [PR #1](https://github.com/XiaoyeCodes/code-animation-prompts/pull/1) 提供。三张为新增说明卡，不归入原包作者作品；本次保留原投稿 JPEG，未包含作者所述的 SVG 源文件。
-- **README 预览**：基于原包静帧、挑选器及示例视频制作，相关素材权利和来源保持不变。
-- **模型标注**：原始示例文件名中的模型名称沿用原包，仅为来源记录，不代表本仓库另行验证或官方背书。
+- **Original material organizer**: Bilibili [**Pitching and Viewing**](https://space.bilibili.com/3690990015613855/?spm_id_from=333.788.upinfo.detail.click), thank you for sharing the resources; keep the description and signature in the original package.
+- **Skill Encapsulation and Warehouse Maintenance**: [XiaoyeCodes](https://github.com/XiaoyeCodes).
+- **Community Reference Graphics**: K1 Flat Vector, K2 Q Version, K3 Kawaii provided by**Strange Leo (@strangeyu911-tech)** in [PR #1](https://github.com/XiaoyeCodes/code-animation-prompts/pull/1). Three are newly added description cards and are not included in the original package as the author's works; this time, the original submission JPEG is retained and does not include the SVG source file mentioned by the author.
+- **README Preview**: Based on the original package of stills, pickers and sample videos, the relevant material rights and sources remain unchanged.
+- **Model Annotation**: The model name in the original example file name is used from the original package. It is only a source record and does not represent additional verification or official endorsement by this repository.

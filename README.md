@@ -1,241 +1,243 @@
+> This local edition translates the documentation, all 341 style prompts, catalog, picker, and filenames into English using machine translation. Some technical wording may need review. Text embedded in supplied images and videos is unchanged. Original paths and checksums are retained only in historical provenance records.
+
 <div align="center">
 
-<img src="docs/images/promo-hq.gif" alt="Code Animation Prompts — 24.5 秒完整宣传片，341 种代码动画风格" width="100%">
+<img src="docs/images/promo-hq.gif" alt="Code Animation Prompts — 24.5-second promotional video featuring 341 animation styles" width="100%">
 
 # Code Animation Prompts
 
-**从一句创意，到一段有风格的代码动画。**
+**From a creative idea to a stylish code animation.**
 
-341 种风格提示词 · 196 张参考静帧 · 10 个系列 · Claude Code & Codex Skill
+341 style prompts · 196 reference stills · 10 series · Claude Code & Codex Skill
 
 [![Styles](https://img.shields.io/badge/styles-341-b7f47b?style=flat-square&labelColor=161d28)](docs/STYLES.md)
 [![Stills](https://img.shields.io/badge/reference_stills-196-86b7ff?style=flat-square&labelColor=161d28)](docs/images/style-gallery.png)
 [![Skill](https://img.shields.io/badge/Agent_Skill-Claude_Code_%26_Codex-e6ceaa?style=flat-square&labelColor=161d28)](skills/code-animation-prompts/SKILL.md)
 [![Sharing](https://img.shields.io/badge/sharing-free-ecb7cc?style=flat-square&labelColor=161d28)](LICENSE.md)
 
-[浏览全部风格](docs/STYLES.md) · [一键导入](#一键导入claude-code--codex) · [手动安装](docs/INSTALL.md) · [原始示例](skills/code-animation-prompts/assets/library/示例) · [来源与许可](LICENSE.md)
+[Browse all styles](docs/STYLES.md) · [One-click import](#one-click-import-claude-code--codex) · [Manual installation](docs/INSTALL.md) · [Original example](skills/code-animation-prompts/assets/library/examples) · [Source and license](LICENSE.md)
 
 </div>
 
-## 先看风格
+## Explore the styles
 
-粒子、霓虹、水墨、剪纸、漫画、电影感……把喜欢的画面交给 AI，再用代码把它动起来。
+Particles, neon, ink, paper cutting, comics, movie feel... Give your favorite picture to AI, and then use code to animate it.
 
-![12 种风格的真实参考静帧](docs/images/style-gallery.png)
+![12 styles of authentic reference stills](docs/images/style-gallery.png)
 
-以上图片来自素材包自带的参考静帧，编号与提示词一一对应。**196 种有图，145 种为文字参考**；静帧展示视觉方向，实际动画取决于内容、实现和渲染结果。
+The above pictures are from the reference still frames that come with the material package, and the numbers correspond to the prompt words one-to-one. **196 have images, 145 are text references**; still frames show visual direction, actual animation depends on content, implementation and rendering results.
 
-| 想做什么 | 可以从这里开始 |
+| What you want to do | You can start here |
 |---|---|
-| 温暖的粒子叙事／片头 | **B3** 粒子聚形、**B2** 萤火光尘 |
-| 国风片头／节日短片 | **Z5** 剪纸、**Z1** 水墨、**Z8** 敦煌 |
-| 科技感／赛博城市 | **R1** 霓虹雨夜、**R5** 像素赛博、**R6** 东方赛博 |
-| 科普／知识讲解 | **M1** 白板手绘讲解、**L10** 工程方案比较墙 |
-| 漫画短片／有冲击力的表达 | **R3** 美式漫画、**X7** 英雄漫画 |
-| 杂志式排版／电影视觉参考 | **H1** Biennale Yellow、**O** 系列 |
+| Warm particle narrative/title | **B3** Particle aggregation,**B2** Firefly dust |
+| National style title/festival short film | **Z5** paper-cutting,**Z1** ink painting,**Z8** Dunhuang |
+| Sense of Technology/Cyber City | **R1** Neon Rainy Night,**R5** Pixel Cyber,**R6** Oriental Cyber |
+| Popular science/knowledge explanation | **M1** whiteboard hand-drawn explanation,**L10** project plan comparison wall |
+| Comic shorts/impactful expressions | **R3** American comics,**X7** hero comics |
+| Magazine layout/movie visual reference | **H1** Biennale Yellow,**O** series |
 
-## 它包含什么
+## What does it contain
 
-| 组成 | 你可以用它做什么 |
+| Composition | What you can do with it |
 |---|---|
-| **素材库与社区补充** | 阅读 341 份 Markdown 提示词，查看静帧、参考实现与原始示例 |
-| **离线风格挑选器** | 搜索、按类别筛选、放大图片、勾选风格、导出已选清单 |
-| **可安装 Agent Skill** | 让 Claude Code／Codex 按需读取风格，规划镜头并制作代码动画 |
-| **轻量检索脚本** | 按编号、关键词、系列查找；不必把整个素材库塞进上下文 |
-| **浏览器渲染工具** | 将提供时间接口的 HTML 逐帧导出为 MP4，可混入已有音频 |
-| **一键导入提示词** | 复制到有本地文件和终端权限的 Claude Code／Codex，完成下载与安装 |
+| **Material Library and Community Supplement** | Read 341 Markdown prompts, view still frames, reference implementations and original examples |
+| **Offline style picker** | Search, filter by category, enlarge image, check style, export selected list |
+| **Agent Skill can be installed** | Let Claude Code/Codex read styles on demand, plan shots and create code animations |
+| **Lightweight search script** | Search by number, keyword, series; no need to stuff the entire material library into the context |
+| **Browser Rendering Tool** | Export HTML that provides a time interface to MP4 frame by frame, and can mix in existing audio |
+| **One-click import prompt words** | Copy to Claude Code/Codex with local file and terminal permissions, complete download and installation |
 
-## 一键导入：Claude Code / Codex
+## One-click import: Claude Code / Codex
 
-**复制下面整段，粘贴给 Claude Code 或 Codex：**
+**Copy the entire paragraph below and paste it into Claude Code or Codex:**
 
 ```text
-请将 https://github.com/XiaoyeCodes/code-animation-prompts 安装为当前编程助手可用的 skill。
+Please install https://github.com/XiaoyeCodes/code-animation-prompts as a skill available to the current programming assistant.
 
-1. 将仓库下载到合适的本地目录；若已有同名目录，先检查内容，不覆盖已有改动。
-2. 阅读 README.md、docs/INSTALL.md 和 skills/code-animation-prompts/SKILL.md。
-3. 根据当前助手选择安装目标：Codex 使用 ~/.agents/skills/code-animation-prompts，
-   Claude Code 使用 ~/.claude/skills/code-animation-prompts。
-   在仓库根目录运行 python scripts/install_skill.py --target codex 或 --target claude。
-   如果当前助手无法确定，只向我确认目标；不要擅自安装到两个位置。
-4. 安装时保留完整 skill 文件夹，包括 assets/library 中全部提示词、静帧、HTML、
-   示例视频和许可文件。若目标已存在，保留现有目录并报告，不自动删除或覆盖。
-5. 执行已安装目录中的 scripts/styles.py search 水墨，确认可查到风格；
-   再执行 scripts/styles.py show B3，确认能读取完整提示词。
-6. 告诉我实际安装路径、如何调用，以及是否需要新开会话。
-   最后给我一句可以直接使用的“12 秒粒子聚形动画”请求示例。
+1. Download the repository to a suitable local directory; if there is already a directory with the same name, check the content first and do not overwrite existing changes.
+2. Read README.md, docs/INSTALL.md, and skills/code-animation-prompts/SKILL.md.
+3. Select the installation target based on the current assistant: Codex uses ~/.agents/skills/code-animation-prompts,
+   Claude Code uses ~/.claude/skills/code-animation-prompts.
+   Run python scripts/install_skill.py --target codex or --target claude in the root directory of the repository.
+   Just confirm the target with me if the current assistant can't determine it; don't install in two locations without permission.
+4. Keep the complete skill folder during installation, including all prompt words, still frames, HTML,
+   Sample video and license file. If the target already exists, the existing directory is retained and reported, and is not automatically deleted or overwritten.
+5. Execute scripts/styles.py search ink in the installed directory to confirm that the style can be found;
+   Then execute scripts/styles.py show B3 to confirm that the complete prompt word can be read.
+6. Tell me the actual installation path, how to call it, and whether you need to open a new session.
+   Finally, give me a request example of "12 seconds particle polymorph animation" that can be used directly.
 
-本次只安装风格 skill，不自动安装视频渲染依赖、不修改其他助手配置。
+This time, only the style skill will be installed, the video rendering dependencies will not be automatically installed, and other assistant configurations will not be modified.
 ```
 
-也可打开 [独立版导入提示词](prompts/one-click-import.md) 复制。这里的“一键导入”指把整段请求交给编程助手执行；普通网页聊天如果没有本地文件权限，无法代你安装。
+You can also open [Independent version import prompt words](prompts/one-click-import.md) to copy. The "one-click import" here refers to handing over the entire request to the programming assistant for execution; if ordinary web chat does not have local file permissions, it cannot be installed on your behalf.
 
 <details>
-<summary><b>更喜欢自己运行命令？</b></summary>
+<summary><b> Prefer to run commands yourself? </b></summary>
 
-需要 Git 和 Python 3.10+。在终端执行：
+Requires Git and Python 3.10+. Execute in terminal:
 
 ```bash
 git clone https://github.com/XiaoyeCodes/code-animation-prompts.git
 cd code-animation-prompts
 
-# 安装给 Codex
+# Install to Codex
 python scripts/install_skill.py --target codex
 
-# 或安装给 Claude Code
+# or install to Claude Code
 python scripts/install_skill.py --target claude
 
-# 两者都安装
+# Install both
 python scripts/install_skill.py --target both
 ```
 
-安装脚本仅复制文件，不下载额外依赖。已有同名技能时会停止，保留现有内容。项目级安装、没有 Python 时的复制方式见 [安装说明](docs/INSTALL.md)。
+The installation script only copies files and does not download additional dependencies. If there is already a skill with the same name, it will be stopped and the existing content will be retained. For project-level installation and copying methods without Python, see [Installation Instructions](docs/INSTALL.md).
 
 </details>
 
-## 装好以后，直接这样说
+## After installing it, just say this
 
 **Codex：**
 
 ```text
-使用 $code-animation-prompts，用 B3 粒子聚形做一段 12 秒横屏动画。
-主题是“把想法变成现实”，依次呈现灵感、构建、完成三个阶段。
-1920×1080，30 fps，深色背景配暖金色粒子，带中文字幕，无声。
-请交付可编辑 HTML、关键帧预览和 MP4；若缺少渲染依赖，请明确说明。
+Use $code-animation-prompts to create a 12-second horizontal screen animation using B3 particle polymorphs.
+The theme is "turning ideas into reality" and presents the three stages of inspiration, construction and completion in sequence.
+1920×1080, 30 fps, dark background with warm golden particles, with English subtitles, silent.
+Please deliver editable HTML, keyframe previews, and MP4s; if rendering dependencies are missing, please state this clearly.
 ```
 
 **Claude Code：**
 
 ```text
-/code-animation-prompts 用 Z5 剪纸做一段 12 秒的新年片头，16:9。
-文字是“新的一年，万事可期”，红纸、米色宣纸、层叠阴影。
-先做可编辑 HTML 和关键帧，声音先不加；环境具备依赖时导出 MP4。
+/code-animation-prompts Use Z5 paper cutting to create a 12-second New Year’s Prologue, 16:9.
+The text is "In the new year, everything can be expected", on red paper, beige rice paper, and layered shadows.
+Create editable HTML and keyframes first, without adding sounds; export MP4 when the environment has dependencies.
 ```
 
-**还没选好风格：**
+**Haven’t chosen a style yet:**
 
 ```text
-用 code-animation-prompts 帮我做一条讲“为什么下雨”的 30 秒科普短片。
-面向小学生，竖屏 9:16，中文大字幕，想要手绘和温暖的感觉。
-先给我 3 个有编号的候选风格，说明怎么动，再推荐一个。
+Use code-animation-prompts to help me make a 30-second popular science video about "Why does it rain?"
+For primary school students, vertical screen 9:16, English subtitles, if you want a hand-drawn and warm feeling.
+First give me 3 numbered candidate styles, explain how to move them, and then recommend one.
 ```
 
-技能提供风格参考与制作流程，视频仍需由编程助手编写并在本地渲染。只查风格不需要 API Key 或付费图像服务；助手本身的使用费用由相应平台决定。
+Skills provide style reference and production processes, and videos still need to be written by programming assistants and rendered locally. Only looking for styles does not require an API Key or paid image service; the cost of using the assistant itself is determined by the corresponding platform.
 
-## 用眼睛挑，比描述更快
+## Pick with your eyes, faster than describing
 
-![原始离线挑选器项目截图](docs/images/style-picker.png)
+![Original offline picker project screenshot](docs/images/style-picker.png)
 
-下载完整仓库后，双击打开：
+After downloading the complete repository, double-click to open it:
 
 ```text
-skills/code-animation-prompts/assets/library/风格挑选.html
+skills/code-animation-prompts/assets/library/style-picker.html
 ```
 
-在 Chrome／Edge 中可离线浏览。搜索关键词或编号 → 勾选风格 → 打开「已选清单」→ 复制给助手，再补充主题、时长、画幅和声音需求。
+Browse offline in Chrome/Edge. Search for keywords or numbers → check the style → open the "Selected List" → copy to the assistant, and then add the theme, duration, frame and sound requirements.
 
-请保留它与 `风格提示词/` 的相对位置。GitHub 文件页面展示的是 HTML 源码，下载后在浏览器打开才能使用挑选器。
+Please retain its relative position to `style-prompts/`. The GitHub file page displays HTML source code. After downloading, open it in a browser to use the selector.
 
 <details>
-<summary>查看搜索状态截图</summary>
+<summary> View search status screenshot </summary>
 
-![按 R1 搜索的项目截图](docs/images/picker-search.png)
+![Screenshot of items searched by R1](docs/images/picker-search.png)
 
 </details>
 
-## 从原始示例看看动画
+## Take a look at the animation from the original example
 
-![B6 原始示例视频的节选动图](docs/images/b6-preview.gif)
+![B6 excerpt animation from the original sample video](docs/images/b6-preview.gif)
 
-*上图从素材包内 B6 示例视频节选，无声预览。原始文件名中的模型标注来自素材包，不代表本仓库另行进行过模型对比测试。*
+*The picture above is an excerpt from the B6 sample video in the material package, with silent preview. The model annotation in the original file name comes from the material package and does not mean that this repository has conducted separate model comparison tests. *
 
-| 示例 | 文件 |
+| Example | Documentation |
 |---|---|
-| **B6 光速穿梭 · 爆炸 · 重聚** | [完整提示词](skills/code-animation-prompts/assets/library/示例/B6_光速穿梭·爆炸·重聚_同一份提示词/提示词.md) · [原始 HTML 与 2 个 MP4](skills/code-animation-prompts/assets/library/示例/B6_光速穿梭·爆炸·重聚_同一份提示词) |
-| **X7 英雄漫画** | [一句话提示词](skills/code-animation-prompts/assets/library/示例/X7_英雄漫画_只给一句话/提示词.md) · [原始 HTML 与 MP4](skills/code-animation-prompts/assets/library/示例/X7_英雄漫画_只给一句话) |
+| **B6 Speed of Light · Explosion · Reunion** | [Full Prompt Words](skills/code-animation-prompts/assets/library/examples/B6_lightspeed-explosion-regrouping_same-prompt/prompt.md) · [Original HTML with 2 MP4s](skills/code-animation-prompts/assets/library/examples/B6_lightspeed-explosion-regrouping_same-prompt) |
+| **X7 Hero Comics** | [One sentence prompt](skills/code-animation-prompts/assets/library/examples/X7_hero-comic_one-sentence/prompt.md) · [Original HTML and MP4](skills/code-animation-prompts/assets/library/examples/X7_hero-comic_one-sentence) |
 
-**B6 是独立示例，不计入 341 个风格条目。** 原始 3 个 MP4、3 个示例 HTML 与过程截图均随仓库保留。
+**B6 is a standalone example and does not count towards the 341 style entries.** The original 3 MP4s, 3 sample HTMLs and process screenshots are retained with the repository.
 
-## 341 种风格怎么分
+## The 341 styles at a glance
 
-| 系列 | 数量 | 侧重点 |
+| Series | Quantity | Focus |
 |---|---:|---|
-| A–G · 代码样片 | 26 | 字、粒子、线与墨、光与天气、图形与纸、讲解、质感 |
-| M · 动态风格 | 40 | 整段视频怎么动、怎么剪、怎么讲 |
-| K · 卡通画风 | 38 | 角色与画面的视觉语言 |
-| Z · 中国风 | 15 | 水墨、工笔、剪纸、皮影、敦煌等 |
-| H · 现成版式 | 12 | 配色与字体的成套搭配 |
-| L · Lemo-Opuscar | 59 | 含完整做法的多类型风格 |
-| V · mg-styles-15 | 15 | 动态图形风格 |
-| X · code-video | 31 | 代码视频风格 |
-| R · 照参考学来的 | 7 | 用代码呈现的赛博朋克等视觉参考 |
-| O · 奥斯卡 98 部 | 98 | 按原素材整理的电影画风参考 |
-| **合计** | **341** | **196 张静帧 + 145 份文字参考** |
+| A–G · Code samples | 26 | Words, particles, lines and ink, light and weather, graphics and paper, explanation, texture |
+| M · Dynamic style | 40 | How to move, cut, and speak the entire video |
+| K · Cartoon style | 38 | Visual language of characters and images |
+| Z · Chinese style | 15 | Ink, gongbi, paper-cut, shadow puppet, Dunhuang, etc. |
+| H · Ready-made layout | 12 | Matching of color and fonts |
+| L · Lemo-Opuscar | 59 | Multiple styles with complete practices |
+| V · mg-styles-15 | 15 | Motion graphics styles |
+| X · code-video | 31 | Code video style |
+| R · Learned from reference | 7 | Visual reference such as cyberpunk presented in code |
+| O · Oscar 98 | 98 | Movie style reference organized according to original materials |
+| **Total** |**341** |**196 stills + 145 text references** |
 
-→ [打开完整风格索引，每个条目均可点击](docs/STYLES.md)
+→ [Open the complete style index, each entry can be clicked](docs/STYLES.md)
 
-## 导出你自己的视频
+## Export your own video
 
-查找风格、阅读提示词和使用挑选器，不需要渲染依赖。只有使用随附 HTML → MP4 工具时，需要 **Playwright + Chromium + FFmpeg**。
+Find styles, read hints, and use pickers without rendering dependencies. **Playwright + Chromium + FFmpeg** is only required when using the included HTML → MP4 tool.
 
 ```bash
 python -m pip install playwright
 python -m playwright install chromium
 ffmpeg -version
 
-# 用随附的时间接口示例验证环境
+# Validate the environment with the attached time interface example
 python skills/code-animation-prompts/scripts/render_video.py skills/code-animation-prompts/assets/starter/index.html --output output/demo.mp4 --duration 12 --fps 30 --width 1920 --height 1080
 ```
 
-`ffmpeg -version` 是检查命令；如未安装，参见 [FFmpeg 官方下载](https://ffmpeg.org/download.html)。渲染器要求页面提供 `window.renderAt(t)` 并在 `?export=1` 时关闭实时循环；原始示例需要先适配这个接口，不能直接当成通用网页录屏器。具体见 [渲染接口与音频说明](skills/code-animation-prompts/references/rendering.md)。
+`ffmpeg -version` is a check command; if it is not installed, see [FFmpeg official download](https://ffmpeg.org/download.html). The renderer requires the page to provide `window.renderAt(t)` and closes the real-time loop at `?export=1`; the original example needs to be adapted to this interface first and cannot be directly used as a general web page screen recorder. For details, see [Rendering Interface and Audio Description](skills/code-animation-prompts/references/rendering.md).
 
-## 仓库结构
+## Repository structure
 
 ```text
 code-animation-prompts/
 ├── README.md
-├── LICENSE.md                       # 各部分的来源与使用约定
-├── prompts/one-click-import.md       # 复制给 Claude Code / Codex 的导入请求
+├── LICENSE.md # Source and usage agreement of each part
+├── prompts/one-click-import.md # Copy the import request to Claude Code / Codex
 ├── docs/
-│   ├── INSTALL.md                   # 安装位置、项目安装、更新方式
-│   ├── STYLES.md                    # 341 个可点击条目
-│   ├── images/                      # 封面、风格墙、真实项目截图、动图
-│   └── source-manifest.json         # 原始 555 个文件的固定 SHA-256 基线
-├── scripts/                         # 安装、索引生成、预览图生成、校验
+│ ├── INSTALL.md # Installation location, project installation, update method
+│ ├── STYLES.md # 341 clickable items
+│ ├── images/ # Cover, style wall, screenshots of real projects, animations
+│ └── source-manifest.json # Fixed SHA-256 baseline of original 555 files
+├── scripts/ # Installation, index generation, preview image generation, verification
 └── skills/code-animation-prompts/
-    ├── SKILL.md                     # 技能入口
-    ├── agents/openai.yaml           # Codex 展示信息
-    ├── references/                  # 风格索引、渲染与来源说明
-    ├── scripts/                     # 检索与视频导出
+    ├── SKILL.md # Skill entrance
+    ├── agents/openai.yaml # Codex display information
+    ├── references/ # Style index, rendering and source description
+    ├── scripts/ # Search and video export
     └── assets/
-        ├── starter/index.html       # 新增的确定性动画接口示例
-        └── library/                 # 原始素材与登记过的社区补充
-            ├── 风格挑选.html
-            ├── 风格提示词/
-            ├── 示例/
-            ├── 第三方许可/
-            ├── _统计.json
-            ├── 说明.md
-            └── 许可与来源.md
+        ├── starter/index.html # New deterministic animation interface example
+        └── library/ # Original materials and registered community additions
+            ├── style-picker.html       # English offline style picker
+            ├── style-prompts/        # English style prompts
+            ├── examples/             # Examples
+            ├── third-party-licenses/        # Third-party licenses
+            ├── stats.json        # Statistics
+            ├── guide.md           # Library guide in English
+            └── licenses-and-sources.md      # Licenses and sources in English
 ```
 
-## 致谢与免费分享约定
+## Acknowledgments and Free Sharing Agreement
 
-感谢原素材整理者——哔哩哔哩 [**俯仰观照**](https://space.bilibili.com/3690990015613855/?spm_id_from=333.788.upinfo.detail.click) 的资源分享。
+Thanks to the original material organizer - Bilibili [**Pitching and Viewing**](https://space.bilibili.com/3690990015613855/?spm_id_from=333.788.upinfo.detail.click) for sharing the resources.
 
-感谢 [**Strange Leo (@strangeyu911-tech)**](https://github.com/strangeyu911-tech) 通过 [PR #1](https://github.com/XiaoyeCodes/code-animation-prompts/pull/1) 补充 K1–K3 三张参考说明卡。当前 196 张参考图由原包的 193 张与社区补充的 3 张组成；[来源与改动记录](skills/code-animation-prompts/references/attribution.md) 随技能一起安装。
+Thanks to [**Strange Leo (@strangeyu911-tech)**](https://github.com/strangeyu911-tech) for adding the three reference instruction cards K1–K3 via [PR #1](https://github.com/XiaoyeCodes/code-animation-prompts/pull/1). The current 196 reference pictures are composed of 193 pictures in the original package and 3 pictures added by the community; [Source and Change Record](skills/code-animation-prompts/references/attribution.md) is installed with the skill.
 
-同时感谢 **LemoLab（Lemo-Opuscar）**、**Vincentwei1021（mg-styles-15）**、**Bae-ChangHyun（code-video）**。XiaoyeCodes 在原素材基础上增加技能封装、工具脚本和项目文档；原始提示词、示例和许可保留；挑选器、统计的改动与新增素材另有记录。
+Also thanks to **LemoLab (Lemo-Opuscar)**,**Vincentwei1021 (mg-styles-15)**,**Bae-ChangHyun (code-video)**. XiaoyeCodes adds skill encapsulation, tool scripts and project documents based on the original materials; the original prompts, examples and licenses are retained; changes to selectors, statistics and new materials are also recorded.
 
-**免费使用，免费分享；请勿把这个合集包装成付费课程、付费 skills 或其他收费内容出售。** 第三方内容继续适用其各自许可，详见 [来源与许可](LICENSE.md)。本仓库没有把所有素材重新声明为 MIT。
+**Free to use, free to share; please do not package this collection as a paid course, paid skills or other paid content for sale.** Third-party content continues to be subject to their respective licenses, see [Source and License](LICENSE.md) for details. Not all material in this repository is redeclared as MIT.
 
 ---
 
 <div align="center">
 
-**选一种风格，写下你的故事，让代码动起来。**
+**Choose a style, write your story, and let the code move.**
 
-如果这个项目对你有帮助，欢迎 Star，也欢迎分享你的代码动画作品。补图前请阅读 [投稿规范](CONTRIBUTING.md)。
+If this project is helpful to you, you are welcome to star and share your code animation works. Please read [Submission Guidelines](CONTRIBUTING.md) before adding images.
 
 </div>
 
@@ -248,4 +250,5 @@ code-animation-prompts/
     <img alt="Star History Chart for XiaoyeCodes/code-animation-prompts" src="https://api.star-history.com/svg?repos=XiaoyeCodes/code-animation-prompts&amp;type=Date" width="100%" />
   </picture>
 </a>
+
 

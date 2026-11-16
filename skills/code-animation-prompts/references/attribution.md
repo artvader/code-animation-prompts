@@ -1,20 +1,20 @@
-# 素材与许可
+# Materials and Licensing
 
-本技能封装的是随项目提供的「代码动画_341种风格提示词_免费」素材包。原作者的说明、提示词、示例与许可保留在 `../assets/library/`。XiaoyeCodes 负责本仓库的技能封装、检索／安装／渲染脚本和展示文档，不将素材包中的全部作品声明为自己的原创。
+This skill encapsulates the "Code Animation_341 Style Prompt Words_Free" material package provided with the project. The original author's instructions, prompts, examples, and permissions remain in `../assets/library/`. XiaoyeCodes is responsible for the skill encapsulation, retrieval/installation/rendering scripts and display documents of this repository, and does not declare all works in the material package as its own original work.
 
-- [原始说明](../assets/library/说明.md)：免费使用、免费转发；禁止将这些内容包装成课程、付费 skills 或其他收费内容出售。
-- [原始来源说明](../assets/library/许可与来源.md)：原整理者对自制／改写部分的说明。
-- [Lemo-Opuscar](../assets/library/第三方许可/Lemo-Opuscar_LICENSE.txt)：MIT，Copyright (c) 2026 LemoLab。
-- [mg-styles-15](../assets/library/第三方许可/mg-styles-15_LICENSE.txt)：MIT，Copyright (c) 2026 Vincentwei1021。
-- [code-video](../assets/library/第三方许可/code-video_LICENSE.txt)：MIT，Copyright (c) 2026 Bae-ChangHyun。
+- [Original description](../assets/library/guide.md): Free to use, free to forward; it is prohibited to package these contents into courses, paid skills or other paid content for sale.
+- [Original source description](../assets/library/licenses-and-sources.md): The original organizer's description of the self-made/rewritten part.
+- [Lemo-Opuscar](../assets/library/third-party-licenses/Lemo-Opuscar_LICENSE.txt): MIT, Copyright (c) 2026 LemoLab.
+- [mg-styles-15](../assets/library/third-party-licenses/mg-styles-15_LICENSE.txt): MIT, Copyright (c) 2026 Vincentwei1021.
+- [code-video](../assets/library/third-party-licenses/code-video_LICENSE.txt): MIT, Copyright (c) 2026 Bae-ChangHyun.
 
-感谢原素材整理者——哔哩哔哩 [**俯仰观照**](https://space.bilibili.com/3690990015613855/?spm_id_from=333.788.upinfo.detail.click) 的资源分享。
+Thanks to the original material organizer - Bilibili [**Pitching and Viewing**](https://space.bilibili.com/3690990015613855/?spm_id_from=333.788.upinfo.detail.click) for sharing the resources.
 
-## 社区补充与原包基线
+## Community supplement and original package baseline
 
-- **Strange Leo (@strangeyu911-tech)**：通过 [PR #1](https://github.com/XiaoyeCodes/code-animation-prompts/pull/1) 提供 K1 扁平矢量、K2 Q 版、K3 卡哇伊三张 1920×1080 JPEG 参考说明卡。这些是社区新增作品，不是原包自带的图片。
-- 作者说明图片通过 SVG 绘制并渲染，但 PR 只提交 JPEG，未附 SVG 源文件；本仓库不把 JPEG 宣称为可编辑的矢量源码。
-- 原始素材包含 193 张静帧；加上社区补图后，当前目录有 196 张。原包 `说明.md` 中的 193 保留为历史原文，当前数量以 `catalog.json` 与挑选器为准。
-- 仓库的 `docs/source-manifest.json` 保留原始 555 个文件的哈希基线，不用当前文件重新覆盖它。[library-changes.json](library-changes.json) 记录两处有意修改（挑选器、统计）及三张新增图片的哈希、来源和原因，并随技能安装。校验分别核对原始未改动文件、登记的修改与新增素材。
+- **Strange Leo (@strangeyu911-tech)**: Provided three 1920×1080 JPEG reference instruction cards for K1 Flat Vector, K2 Q Edition, and K3 Kawaii via [PR #1](https://github.com/XiaoyeCodes/code-animation-prompts/pull/1). These are new works from the community, not the pictures that come with the original package.
+- The author explains that the image is drawn and rendered through SVG, but the PR only submits JPEG without attaching the SVG source file; this repository does not declare JPEG as an editable vector source code.
+- The original material contains 193 still frames; after adding community supplements, the current catalog has 196 frames. 193 in the original package `guide.md` are retained as historical original text, and the current number is based on `catalog.json` and the selector.
+- `docs/source-manifest.json` for repository retains the hash baseline of the original 555 files without re-overwriting it with the current file. [library-changes.json](library-changes.json) records the hashes, sources and reasons of two intentional changes (picker, statistics) and three new images, and installs them with the skill. Verification checks the original unmodified files, registered modifications and new materials respectively.
 
-不同来源的内容保留各自许可。免费分享约定不改写第三方 MIT 文本；整个合集不能简单标成全部 MIT。电影、艺术风格与示例名称是参考描述，不代表官方合作或背书。
+Content from different sources retains their respective licenses. The free sharing agreement does not rewrite third-party MIT texts; the entire collection cannot simply be marked as all MITs. Movie, art style, and sample names are reference descriptions and do not imply official collaboration or endorsement.

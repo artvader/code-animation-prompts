@@ -1,24 +1,24 @@
-# 一键导入提示词
+# Import prompt words with one click
 
-复制下面整段到有本地文件与终端权限的 Claude Code 或 Codex。
+Copy the entire paragraph below to Claude Code or Codex with local file and terminal permissions.
 
 ```text
-请将 https://github.com/XiaoyeCodes/code-animation-prompts 安装为当前编程助手可用的 skill。
+Please install https://github.com/XiaoyeCodes/code-animation-prompts as a skill available to the current programming assistant.
 
-1. 将仓库下载到合适的本地目录；若已有同名目录，先检查内容，不覆盖已有改动。
-2. 阅读 README.md、docs/INSTALL.md 和 skills/code-animation-prompts/SKILL.md。
-3. 根据当前助手选择安装目标：Codex 使用 ~/.agents/skills/code-animation-prompts，
-   Claude Code 使用 ~/.claude/skills/code-animation-prompts。
-   在仓库根目录运行 python scripts/install_skill.py --target codex 或 --target claude。
-   如果当前助手无法确定，只向我确认目标；不要擅自安装到两个位置。
-4. 安装时保留完整 skill 文件夹，包括 assets/library 中全部提示词、静帧、HTML、
-   示例视频和许可文件。若目标已存在，保留现有目录并报告，不自动删除或覆盖。
-5. 执行已安装目录中的 scripts/styles.py search 水墨，确认可查到风格；
-   再执行 scripts/styles.py show B3，确认能读取完整提示词。
-6. 告诉我实际安装路径、如何调用，以及是否需要新开会话。
-   最后给我一句可以直接使用的“12 秒粒子聚形动画”请求示例。
+1. Download the repository to a suitable local directory; if there is already a directory with the same name, check the content first and do not overwrite existing changes.
+2. Read README.md, docs/INSTALL.md, and skills/code-animation-prompts/SKILL.md.
+3. Select the installation target based on the current assistant: Codex uses ~/.agents/skills/code-animation-prompts,
+   Claude Code uses ~/.claude/skills/code-animation-prompts.
+   Run python scripts/install_skill.py --target codex or --target claude in the root directory of the repository.
+   Just confirm the target with me if the current assistant can't determine it; don't install in two locations without permission.
+4. Keep the complete skill folder during installation, including all prompt words, still frames, HTML,
+   Sample video and license file. If the target already exists, the existing directory is retained and reported, and is not automatically deleted or overwritten.
+5. Execute scripts/styles.py search ink in the installed directory to confirm that the style can be found;
+   Then execute scripts/styles.py show B3 to confirm that the complete prompt word can be read.
+6. Tell me the actual installation path, how to call it, and whether you need to open a new session.
+   Finally, give me a request example of "12 seconds particle polymorph animation" that can be used directly.
 
-本次只安装风格 skill，不自动安装视频渲染依赖、不修改其他助手配置。
+This time, only the style skill will be installed, the video rendering dependencies will not be automatically installed, and other assistant configurations will not be modified.
 ```
 
-[返回 README](../README.md)
+[Return to README](../README.md)

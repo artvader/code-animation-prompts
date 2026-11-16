@@ -39,8 +39,8 @@ def main():
     h1{{font-size:76px;line-height:1.02;letter-spacing:-3px;margin:27px 0 22px}}h1 em{{font-style:normal;color:#b7f47b}}h2{{font-size:27px;font-weight:500;margin-bottom:18px}}p{{font-size:18px;color:#9ba7ba;line-height:1.8}}
     .chips{{display:flex;gap:12px;margin-top:30px}}.chips span{{border:1px solid #374739;padding:10px 15px;border-radius:30px;font-size:14px;color:#d8e8ce}}
     .tiles{{display:grid;grid-template-columns:1fr 1fr;gap:15px;transform:rotate(-2deg)}}article div{{padding:12px 14px}}.foot{{margin-top:25px}}
-    </style><main><section><div class="topline">THE CODE ANIMATION STYLE LIBRARY</div><h1>Code.<br>Motion.<br><em>{total} possibilities.</em></h1><h2>让代码成为你的动画工作室。</h2><p>风格提示词 × 真实参考静帧 × 可安装 Agent Skill</p><div class="chips"><span>Claude Code</span><span>Codex</span><span>Free to share</span></div></section><section class="tiles">{''.join(card(x) for x in ['R1','Z5','B3','R5'])}</section></main><div class="foot"><span>XIAOYECODES / CODE-ANIMATION-PROMPTS</span><span>{total} STYLES · {with_still} STILLS · {series_count} SERIES</span></div>'''
-    gallery = f'''<!doctype html><meta charset="utf-8"><style>{css}body{{width:1600px;padding:52px 56px}}h1{{font-size:40px;margin:14px 0}}p{{color:#94a0b4;font-size:18px;margin-bottom:30px}}.grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}}.foot{{margin-top:28px}}</style><div class="topline">A SMALL WINDOW INTO {total} STYLES</div><h1>一种内容，许多种表达。</h1><p>以下为素材包自带的真实参考静帧；每张图都能通过编号找到对应提示词。</p><div class="grid">{''.join(card(x) for x in ['B1','B3','C1','Z5','H1','L1','L10','R1','R3','R5','R6','O91'])}</div><div class="foot"><span>REFERENCE STILLS FROM THE INCLUDED LIBRARY</span><span>{with_still} WITH STILLS / {text_only} TEXT REFERENCES</span></div>'''
+    </style><main><section><div class="topline">THE CODE ANIMATION STYLE LIBRARY</div><h1>Code.<br>Motion.<br><em>{total} possibilities.</em></h1><h2>Turn code into your animation studio.</h2><p>Style prompts × real reference stills × installable Agent Skill</p><div class="chips"><span>Claude Code</span><span>Codex</span><span>Free to share</span></div></section><section class="tiles">{''.join(card(x) for x in ['R1','Z5','B3','R5'])}</section></main><div class="foot"><span>XIAOYECODES / CODE-ANIMATION-PROMPTS</span><span>{total} STYLES · {with_still} STILLS · {series_count} SERIES</span></div>'''
+    gallery = f'''<!doctype html><meta charset="utf-8"><style>{css}body{{width:1600px;padding:52px 56px}}h1{{font-size:40px;margin:14px 0}}p{{color:#94a0b4;font-size:18px;margin-bottom:30px}}.grid{{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}}.foot{{margin-top:28px}}</style><div class="topline">A SMALL WINDOW INTO {total} STYLES</div><h1>One idea. Many ways to express it.</h1><p>These reference stills are included in the library. Use each style ID to find its prompt.</p><div class="grid">{''.join(card(x) for x in ['B1','B3','C1','Z5','H1','L1','L10','R1','R3','R5','R6','O91'])}</div><div class="foot"><span>REFERENCE STILLS FROM THE INCLUDED LIBRARY</span><span>{with_still} WITH STILLS / {text_only} TEXT REFERENCES</span></div>'''
     with sync_playwright() as pw:
         browser = pw.chromium.launch(headless=True, channel=args.browser_channel)
         page = browser.new_page(viewport={"width":1600,"height":1000}, device_scale_factor=1)
@@ -51,7 +51,7 @@ def main():
             page.evaluate("document.fonts.ready")
             page.locator("img").evaluate_all("imgs => Promise.all(imgs.map(i => i.decode()))")
             page.locator("body").screenshot(path=str(OUT / f"{name}.png"))
-        page.goto((SKILL / "assets/library/风格挑选.html").as_uri())
+        page.goto((SKILL / "assets/library/style-picker.html").as_uri())
         page.evaluate("document.fonts.ready")
         page.wait_for_timeout(800)
         page.screenshot(path=str(OUT / "style-picker.png"))
@@ -64,7 +64,7 @@ def main():
         return
     subprocess.run([
         "ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-ss", "3", "-t", "4",
-        "-i", str(SKILL / "assets/library/示例/B6_光速穿梭·爆炸·重聚_同一份提示词/Opus5.5_High.mp4"),
+        "-i", str(SKILL / "assets/library/examples/B6_lightspeed-explosion-regrouping_same-prompt/Opus5.5_High.mp4"),
         "-filter_complex", "fps=10,scale=640:-1:flags=lanczos,split[a][b];[a]palettegen=max_colors=96[p];[b][p]paletteuse=dither=none",
         "-loop", "0", str(OUT / "b6-preview.gif")
     ], check=True)
